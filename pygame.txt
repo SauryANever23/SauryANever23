@@ -1,0 +1,60 @@
+Pygame Notes: 
+
+pygame.init() - starts pygame
+--all the code is written in while loop in the game--
+
+code: for making a basic screen
+
+-------------------------------------------------------------------------
+--------------------------------------------------------------------------
+
+import pygame 
+from sys import exit 
+
+
+# initializing pygame is absolutely necessary
+pygame.init()
+
+# creating a screen
+screen = pygame.display.set_mode((800, 400))
+
+#makeing the loop for ever
+while True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            exit()
+    pygame.display.update() # This updates the screen variable
+    
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+
+Fps of a game:
+ 
+Maintaining FPS for a game is extremely important, 
+There are Two ways to set Fps:
+Ceiling FPS: The heighest the Fps can go
+Floor FPS: The lowest the Fps can get
+
+--Important Concept for displaying images--
+-Surface- 
+   |----->Display surface:The game window and everything in it
+   |----->(regular) surface: a single image(rendered, coloured, imported, etc)
+
+--REGULAR SURFACE--
+        | 
+        |
+--DISPLAY SURFACE--
+        ]
+        |
+   --DISPLAY--
+ 
+blit - block image transfer(Basically putting one surface on another)
+
+--ADDING TEXT IN PYGAME--	
+-FIRST- 
+  |----->create and image of the text
+-SECOND-
+  |----->display it on the display surface
+
+
