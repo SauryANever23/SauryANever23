@@ -35,4 +35,5 @@ count.name = "span"
 count["class"] = "ucontainer"
 print(count)
 
-print(soup.select("span#italics"))
+for child in soup.find(class_="container").children:
+    print(child)
