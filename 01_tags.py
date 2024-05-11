@@ -30,11 +30,17 @@ soup = BeautifulSoup(html_doc, 'html.parser')
 # for parent in soup.find(class_="box").parents:
 #     print(parent)
 
-count = soup.find(class_="container")
-count.name = "span"
-count["class"] = "ucontainer"
-print(count)
+# count = soup.find(class_="container")
+# count.name = "span"
+# count["class"] = "ucontainer"
+# print(count)
 
 
-for child in soup.find(class_="container").children:
-    print(child)
+# for child in soup.find(class_="ucontainer").children:
+#     print(child)
+
+# for parent in soup.find(class_="box").parents:
+#     print(parent)
+#     break
+
+
