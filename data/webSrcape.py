@@ -14,5 +14,5 @@ r = requests.get(url)
 soup = BeautifulSoup(r.text, 'html.parser')
 
 
-span = soup.find(class_="a-size-mini a-spacing-none a-color-base s-line-clamp-2")
+span = soup.select("")
 print(span)
