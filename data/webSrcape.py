@@ -14,5 +14,5 @@ r = requests.get(url)
 soup = BeautifulSoup(r.text, 'html.parser')
 
 
-span = soup.find(class_="a-section a-spacing-small a-spacing-top-small")
-print(span.)
+span = soup.select("div.a-section a-spacing-small a-spacing-top-small")
+print(span)
