@@ -12,4 +12,7 @@ url = "https://www.amazon.in/s?k=laptops&crid=2WOERC8BUXQLT&sprefix=laptop%2Caps
 r = requests.get(url)
 # Whenever using BeautifulSoup create a soup object    
 soup = BeautifulSoup(r.text, 'html.parser')
-print(soup.prettify())
+
+
+span = soup.find(class_="a-size-mini a-spacing-none a-color-base s-line-clamp-2")
+print(span)
