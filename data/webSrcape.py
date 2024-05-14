@@ -14,5 +14,6 @@ r = requests.get(url)
 soup = BeautifulSoup(r.text, 'html.parser')
 
 
-span = soup.select("div.a-section a-spacing-small a-spacing-top-small")
-print(span)
+span = soup.select("span.a-size-medium.a-color-base.a-text-normal")
+for spans in span:
+    print(spans.string, "\n\n")
