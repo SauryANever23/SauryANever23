@@ -41,7 +41,7 @@ for img_url in image_urls:
 
 for i in range(len(image_urls)):
     wget.download(image_urls[i])
-    for j in range(1, i):
+   
         
   
     
