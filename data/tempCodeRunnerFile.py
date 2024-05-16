@@ -1,1 +1,2 @@
-https://www.amazon.in/s?k=laptops&crid=2WOERC8BUXQLT&sprefix=laptop%2Caps%2C343&ref=nb_sb_noss_1
+for image in images:
+#     print(image['src'])
