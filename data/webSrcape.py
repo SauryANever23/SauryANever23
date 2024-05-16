@@ -1,6 +1,9 @@
 import requests
 from bs4 import BeautifulSoup
 import wget
+import os
+
+import shutil
 
 url = "https://wikileaks.org/+-Global-Economy-+.html"
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
@@ -34,4 +37,10 @@ for img in images:
 # Print the list of image URLs
 for img_url in image_urls:
     print(img_url)
+
+
+for i in range(len(image_urls)):
+    wget.download(image_urls[i])
+  
+    
 
