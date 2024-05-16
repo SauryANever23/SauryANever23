@@ -7,11 +7,12 @@ r = requests.get(url)
 soup = BeautifulSoup(r.text, 'html.parser')
 
 # getting titles from the website
-span = soup.select("span.a-size-medium.a-color-base.a-text-normal")
+span = soup.select("span.a-size-medium a-color-base a-text-normal")
 
 for spans in span:
     print(spans.string, "\n\n")
 
+print(span, "\n\n")
 # scraping price
 # prices = soup.select("span.a-price-whole")
 
