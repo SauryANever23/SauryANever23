@@ -7,7 +7,7 @@ r = requests.get(url)
 soup = BeautifulSoup(r.text, 'html.parser')
 
 # getting titles from the website
-span = soup.select("span.a-size-medium a-color-base a-text-normal")
+span = soup.select("class.a-size-mini a-spacing-none a-color-base s-line-clamp-2")
 
 for spans in span:
     print(spans.string, "\n\n")
