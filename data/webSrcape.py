@@ -35,13 +35,7 @@ for img in images:
         image_urls.append(img_url)
 
 # Print the list of image URLs
-for img_url in image_urls:
-    print(img_url)
 
-
-for i in range(len(image_urls)):
-    wget.download(image_urls[i])
-   
         
   
     
