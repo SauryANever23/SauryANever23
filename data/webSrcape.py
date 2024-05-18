@@ -34,7 +34,6 @@ for img in images:
         img_url = requests.compat.urljoin(url, img_src)
         image_urls.append(img_url)
 
-# Print the list of image URLs
 
         
   
